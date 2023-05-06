@@ -1,0 +1,264 @@
+<html>
+    <head>
+        <title>Index</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="index.js"></script>
+
+
+     
+    </head>
+    <body>
+
+              
+
+
+        <div class="SideBar">
+           <button type="button" id="ImgBtn1" onclick="show1()">T-shirts</button>
+           <button type="button" id="ImgBtn2" onclick="show2()">Pants</button>
+           <button type="button" id="ImgBtn3" onclick="show3()">Longsleeves</button>
+           <button type="button" id="ImgBtn4" onclick="show4()">Dresses</button>
+           <button type="button" id="ImgBtn5" onclick="show5()">Shirts</button>
+
+
+          
+        </div>
+
+
+        
+
+
+        <header>
+            <h1>Sales Future</h1>
+        </header>
+        <div class="SlideShow">
+
+
+        <div class="mySlides fade">
+            <div class="Num">1/3</div>
+            <img src="Images/clothing1.jpeg" style="width: 100%;">
+            <div class="Caption">One</div>            
+        </div>
+
+
+        <div class="mySlides fade">
+            <div class="Num">2/3</div>
+            <img src="Images/clothing2.jpeg" style="width: 100%;">
+            <div class="Caption">Two</div>            
+        </div>
+
+
+        <div class="mySlides fade">
+            <div class="Num">3/3</div>
+            <img src="Images/clothing3.jpeg" style="width: 100%;">
+            <div class="Caption">Three</div>            
+        </div>
+
+
+        <!--Next & Previous buttons-->
+
+
+        <a class="pre" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+         </div>
+         <br>
+
+
+         <!--Circles-->
+         <div style="text-align: center;">
+
+
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        
+        </div>
+
+
+        <div class="content">       
+
+
+        <div id="clothingItem">
+
+
+            
+           
+                
+                    <img id="default" src="Images/clothing1.jpeg" style="display: block;">
+                    <img id="Tshirt" src="Images/Tshirt.jpeg" style="display: none;" >
+                    <img id="Pant" src="Images/Pant.jpeg" style="display: none;" >
+                    <img id="Longsleeve" src="Images/Longsleeve.jpeg" style="display: none;" >
+                    <img id="Dress" src="Images/Dress.jpeg" style="display: none;" >
+                    <img id="shirt" src="Images/Shirt.jpeg" style="display: none;" >
+                    <button type="button" id="Clt" onclick="Choose()">Choose</button>
+                
+                
+
+
+        </div> 
+
+
+<div class="radio">
+    <input type="radio" name="rad1" value="Brand" <h3>Brand</h3>
+    <input type="radio" name="rad2" value="Brand" <h3>Color</h3>
+    <input type="radio" name="rad3" value="Brand" <h3>Location</h3>
+    <input type="radio" name="rad4" value="Brand" <h3>Size</h3>
+    <input type="radio" name="rad5" value="Brand" <h3>Age category</h3>
+
+
+</div>
+
+
+<h1 id="text"></h1>
+
+
+<div class="prediction">
+    <button type="button" onclick="predict">Predict</button>
+    
+</div>
+
+
+     <!--<button id="items1">Clothing A</button>
+
+
+        <button div id="items2">Clothing B</div>
+        </button>
+
+
+        <button div id="items3">Clothing C</div>
+        </button>
+
+
+        <button div id="items4">Clothing D</button>
+
+
+        <button div id="items5">Clothing E</button>
+
+
+        <button><div id="items6">
+            <h3>Clothing F</h3>
+        </div>
+        </button>
+    -->
+       
+   <!-- <div class="clothing_items">
+        <button type="button" id="Tshirt">Tshirt</button>
+        <button type="button" id="Pants">Pants</button>
+        <button type="button" id="Longsleeve">Longsleeve</button>
+        <button type="button" id="Dress">Dress</button>
+        <button type="button" id="Shirt">Shirt</button>
+    </div>-->
+
+
+  <!--  <div class="Tshirt">       
+
+
+       
+              
+    </div>
+
+
+    <div class="Pants">       
+
+
+        
+               
+    </div>
+
+
+    <div class="Longsleeve">       
+
+
+        
+               
+    </div>
+
+
+    <div class="Dress">       
+
+
+       
+               
+    </div>
+
+
+    <div class="Shirt">       
+
+
+       
+               
+    </div>
+    -->
+
+
+  <!--  <table>
+        <tr>
+            <td>
+                <img src="/Images/Tshirt.jpeg">
+                <div class="TText"><button type="button" id="Tbtn" onclick="MyFunc()">T-shirts</button></div>
+                <h1 id="SelT"></h1>
+            </td>
+            <td>
+              <img src="/Images/Pant.jpeg">
+              <div class="PText"><button type="button">Pants</button></div>            
+            <td>
+
+
+                <td>
+                    <img src="/Images/Longsleeve.jpeg">
+                    <div class="LText"><button type="button">Longsleeves</button></div>
+                </td>
+
+
+                <td>
+                <img src="/Images/Dress.jpeg">
+                <div class="LText"><button type="button">Dresses</button></div>
+                </td>
+
+
+                <td>
+                    <img src="/Images/Shirt.jpeg">
+                    <div class="LText"><button type="button">Shirts</button></div>
+
+
+                </td>
+
+
+            
+        </tr>
+    </table>
+    -->
+
+
+   
+
+
+    
+        
+     <!--   <div class="Brands">
+          <span>Brands</span>
+          <div class="Brand-names">
+            <button type="button" id="D">D</button><br>
+            <button type="button" id="A">A</button><br>
+            <button type="button" id="R">R</button><br>
+            <button type="button" id="B">B</button><br>
+            <button type="button" id="C">C</button>            
+          </div>
+        </div>-->
+
+
+    </div>
+
+
+        
+        
+
+
+    
+
+
+   
+
+
+
+    </body>
+</html>
