@@ -10,6 +10,18 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route('/Home', methods=['POST', 'get'])
+def home():
+    return render_template("index.html")
+
+@app.route('/Login', methods=['POST', 'get'])
+def login():
+    return render_template("Login.html")
+
+@app.route('/SignUp', methods=['POST', 'get'])
+def signup():
+    return render_template("SignUp.html")
+
 
 @app.route('/predict', methods=['POST', 'get'])
 def result():
